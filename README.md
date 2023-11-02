@@ -1,0 +1,2 @@
+# pico
+Picoscope related code
