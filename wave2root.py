@@ -97,7 +97,7 @@ def main(args):
 
     
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Process a CSV file and work with ROOT files.")
+    parser = argparse.ArgumentParser(description="Process a folder full of CAENWaveDemo TXT file to ROOT files. Different channels of the same run are merged into a single tree.")
     parser.add_argument("--wave-dir", required=True, help="Directory that contains all wave txt files")
     args = parser.parse_args()
 
