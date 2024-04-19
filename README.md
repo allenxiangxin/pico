@@ -1,8 +1,8 @@
-# To ROOT
+# To Convert Data from One File Format to Another
 
-Useful scripts that:
-1. converts picoscope files (many CSV) to ROOT
-2. converts CAENWaveDemo Wave files (TXT) to ROOT
+There are two converters by now:
+1. `csv2root.py`, converts picoscope files (many CSV) to ROOT
+2. `wave2root.py`, converts CAENWaveDemo Wave files (TXT) to ROOT
 
 # Install pyROOT
 The following code needs pyROOT.
@@ -24,3 +24,5 @@ Usage:
 ```bash
 python wave2root.py --help
 ```
+
+CAENWaveDemo saves channel waveform in seperate TXT files. The wave2root will also combine different channels of the same run into a single TTree. 
